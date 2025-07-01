@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internet Usage Interactive Infographic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Global Internet Usage Trends (2010–2025)</h1>
+    <select id="regionSelect">
+      <option value="all">All Regions</option>
+      <option value="Asia">Asia</option>
+      <option value="Europe">Europe</option>
+      <option value="Africa">Africa</option>
+      <option value="Americas">Americas</option>
+    </select>
+    <button id="toggleChartType">Toggle Chart</button>
+    <button id="toggleTheme">Dark Mode</button>
+    <button id="downloadChart">Download</button>
+  </div>
+  <div class="chart-area">
+    <canvas id="usageChart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
